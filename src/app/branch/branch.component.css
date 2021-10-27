@@ -1,0 +1,21 @@
+.header{
+    justify-content: center;
+    background-color: white;
+    color: blue;
+}
+
+.radio {
+    margin-left: 25px;
+}
+
+.checkbox {
+    justify-content: space-around;
+}
+.branchbutton {
+    margin: auto;
+    display: block;
+}
+.submitbutton {
+    margin: auto;
+    display: block;
+}

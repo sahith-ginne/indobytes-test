@@ -1,0 +1,76 @@
+<p>customer-registration-form works!</p>
+
+<div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex = "75"> 
+      <form  fxLayout = "column">
+        <mat-toolbar class="header" fxFlexFill>Customer Registration</mat-toolbar>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder=" Enter Customer Name" required>
+          <!-- <input matInput placeholder="Enter customer name" name="customername" #customername = "ngModel" [(ngModel)]="customer.customername" required> -->
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder=" Enter Email Address" required>
+          <!-- <input matInput placeholder="Enter Email Address" name="email" #email="ngModel" [(ngModel)]="customer.email" required> -->
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder=" Enter Phone Number" required>
+          <!-- <input matInput placeholder="Enter Phone Number" name="phonenumber" #phonenumber="ngModel" [(ngModel)]="customer.phonenumber" required> -->
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder=" Enter Password" required>
+          <!-- <input matInput placeholder="Enter Password" name="password" #password="ngModel" [(ngmodel)]="customer.password" required> -->
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder=" Enter Confirm Password"required>
+          <!-- <input matInput placeholder="Enter Confirm Password" name="confirmpassword" #confirmpassword="ngModel" [(ngModel)]="customer.confirmpassword"> -->
+          <!-- <span *ngIf="confirmpassword.touched && confirmpassword.errors?.required">password required</span>
+          <span *ngIf="confirmpassword.touched && confirmpassword.errors?.MustMatched">password must match</span> -->
+        </mat-form-field>
+      </form>
+    </mat-card>
+  </div>
+  
+  <div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex = "75"> 
+      <form fxLayout = "column">
+        <mat-toolbar class="header" fxFlexFill>Branch Details</mat-toolbar>
+        
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder="Enter Branch Name">
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder="Enter Email Address">
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder="Enter Phone Number">
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder="Enter Branch City">
+        </mat-form-field>
+        <mat-form-field appearance = "outline">
+          <input matInput placeholder="Enter Branch Address">
+        </mat-form-field>
+        <mat-radio-group aria-label="select an option" class="radio">
+          <span>Branch Type</span>
+        <mat-radio-button value="1">Main Branch</mat-radio-button>
+        <mat-radio-button value ="2">Sub Branch</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <section>
+        <div class="checkbox">
+        <span>Bussiness Branches</span>
+        
+        <mat-checkbox>Marketing</mat-checkbox>
+        <mat-checkbox>IT</mat-checkbox>
+        <mat-checkbox>BPO</mat-checkbox>
+        <mat-checkbox>Sales</mat-checkbox>
+        <mat-checkbox>Electronics</mat-checkbox>
+        </div>
+      </section>
+      </form>
+    </mat-card>
+  </div>
+  <button mat-button class="branchbutton" routerLinkActive ="active" routerLink = "/branch">+ADD BRANCH</button><br>
+  <button mat-button class=" submitbutton" routerLinkActive ="active" routerLink = "/detail-view">SUBMIT</button>
+  
+  
